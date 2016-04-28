@@ -1,0 +1,274 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;;
+    text-align: justify;
+}
+
+p.main {
+  font-size: 20px;
+}
+
+p.second {
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.note{
+  color:#737373;
+}
+
+.header {
+  position:absolute;
+  padding-left: 50px;
+  height: 8%;
+  width:100%;
+  background-color: black;
+  font-family: 'Source Serif Pro', serif;
+  color:white;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    top:8%;
+}
+
+.sidebar {
+    left: 0px;
+    width: 20%;
+    top: 8%;
+    bottom: 0;
+    overflow-y: auto;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.legend {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2000;
+  left:505px;
+  top:75px;
+  margin: 5px;
+  padding:10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+td div{
+  width:30px;
+  height:20px;
+
+}
+
+td:last-child{
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#show-cc-btn{
+  width: 180px;
+  height:35px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #67c446;
+  background-color: #ffffff;
+  border: 3px solid #a4dc90;
+  left:10%;
+  bottom:10%;
+}
+.dropDown{
+  font-size: 18px;
+  overflow:hidden;
+  width:150px;
+  height:30px;
+}
+
+#demographicDropDown{
+  box-shadow: 1px 1px 11px #91acfe;
+  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
+}
+
+#crimeTractDropDown{
+  box-shadow: 1px 1px 11px #c6c7ef;
+  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
+}
+
+#crimeTypeDropDown{
+  box-shadow: 1px 1px 11px #c6c7ef;
+  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
+}
+
+#crimeMonthDropDown{
+  box-shadow: 1px 1px 11px #c6c7ef;
+  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
+}
+
+#crimeSearchButton,
+#clearCrimeSearchButton{
+  width: 130px;
+  height:35px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #3c84c8;
+  background-color: #ffffff;
+  border: 3px solid #c6dbef;
+}
+
+.ck-table,
+.bss-table,
+.ci-table{
+  font-size: 16px;
+}
+
+#clearSchoolMarker{
+  width: 150px;
+  height:35px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #888ac1;
+  background-color: #ffffff;
+  border: 3px solid #bcbddc;
+}
+
+#searchBikeShare-btn{
+  width: 180px;
+  height:35px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fb9067;
+  background-color: #ffffff;
+  border: 3px solid #fee4da;
+}
+
+#clearBikeShare-btn{
+  width: 180px;
+  height:35px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fb9067;
+  background-color: #ffffff;
+  border: 3px solid #fee4da;
+}
+
+.navigation-btn{
+  font-family: 'Montserrat', sans-serif;
+  width: 150px;
+  height:50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6496c8;
+  background: rgba(0,0,0,0);
+  border: solid 2px #6496c8;
+}
+
+.navigation-btn:hover {
+  border-color: #c86464;
+  color: #c86464;
+}
+
+#previous-button{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  z-index: 2000;
+}
+
+#next-button{
+  position:fixed;;
+  bottom:20px;
+  left:210px;
+  z-index: 2000;
+}
+
+#legend-first{
+  background-color: #ffffb2;
+}
+
+#legend-second{
+  background-color: #fed976;
+}
+
+#legend-third{
+  background-color: #feb24c;
+}
+
+#legend-fourth{
+  background-color: #fd8d3c;
+}
+
+#legend-fifth{
+  background-color: #fc4e2a;
+}
+
+#sidebar-legend-first{
+  background-color: #b3cde3;
+}
+
+#sidebar-legend-second{
+  background-color: #fbb4ae;
+}
+
+#sidebar-legend-third{
+  background-color: #decbe4;
+}
+
+.leaflet-marker-icon {
+    border:3px solid rgba(255,255,255,0.5);
+    border-radius:50%;
+}
+
+.Kindergarten {
+    background-color: #b3e2cd;
+}
+
+.Pre-school {
+    background-color: #fdcdac;
+}
+
+.Elementary-School {
+    background-color: #cdb3e2;
+}
+
+.High-School {
+    background-color: #f4cae4;
+}
+
+.Elem-Mid-High {
+    background-color: #e6f5c9;
+}
+
+.Middle-High {
+    background-color: #fff2ae;
+}
+
+.Tutoring {
+    background-color: #f1e2cc;
+}
+
+.Elem-Middle {
+    background-color: #cccccc;
+}
+
+.bike-icon {
+    background-color: #b3e2cd;
+}
+
+.crime-icon {
+    background-color: #fdcdac;
+}
