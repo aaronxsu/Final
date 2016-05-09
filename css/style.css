@@ -2,33 +2,7 @@ body {
     padding: 0;
     overflow: hidden;
     font-family: 'Open Sans', sans-serif;;
-    text-align: justify;
-}
-
-p.main {
-  font-size: 20px;
-}
-
-p.second {
-  font-size: 16px;
-}
-
-h1{
-  font-family: 'Montserrat', sans-serif;
-}
-
-.note{
-  color:#737373;
-}
-
-.header {
-  position:absolute;
-  padding-left: 50px;
-  height: 8%;
-  width:100%;
-  background-color: black;
-  font-family: 'Source Serif Pro', serif;
-  color:white;
+    /*text-align: justify;*/
 }
 
 .map {
@@ -36,239 +10,106 @@ h1{
     right: 0px;
     left: 0px;
     height: 100%;
-    top:8%;
 }
 
 .sidebar {
-    left: 0px;
-    width: 20%;
-    top: 8%;
-    bottom: 0;
-    overflow-y: auto;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    font-size: 16px;
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
     position: absolute;
     z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    overflow-y: auto;
     background-color: white;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
-.legend {
+.leaflet-draw.leaflet-control{
+  top: 20px;
+  right: 50px;
+}
+
+.searchboxes {
   position: absolute;
-  background-color: #fff;
   z-index: 2000;
-  left:505px;
-  top:75px;
-  margin: 5px;
-  padding:10px 10px 10px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-td div{
-  width:30px;
-  height:20px;
-
-}
-
-td:last-child{
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-#show-cc-btn{
-  width: 180px;
-  height:35px;
+  right:110px;
+  top:10px;
+  padding: 5px 10px 5px 10px;
   font-weight: bold;
-  font-size: 18px;
-  color: #67c446;
-  background-color: #ffffff;
-  border: 3px solid #a4dc90;
-  left:10%;
-  bottom:10%;
 }
-.dropDown{
-  font-size: 18px;
-  overflow:hidden;
-  width:150px;
+
+.searchboxes td{
+  height: 40px;
+  width:130px;
+}
+
+#rank-min,
+#rank-max {
+  width:100px;
+}
+
+#filter{
+  margin-left: 20px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#filter td{
   height:30px;
 }
 
-#demographicDropDown{
-  box-shadow: 1px 1px 11px #91acfe;
-  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
-}
-
-#crimeTractDropDown{
-  box-shadow: 1px 1px 11px #c6c7ef;
-  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
-}
-
-#crimeTypeDropDown{
-  box-shadow: 1px 1px 11px #c6c7ef;
-  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
-}
-
-#crimeMonthDropDown{
-  box-shadow: 1px 1px 11px #c6c7ef;
-  background: #ffffff url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 150px center;
-}
-
-#crimeSearchButton,
-#clearCrimeSearchButton{
-  width: 130px;
-  height:35px;
+.shape{
+  background-color: #f5f5f5;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  height:180px;
+  width:360px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin: 20px 20px 20px 20px;
+  padding-left: 10px;
   font-weight: bold;
-  font-size: 18px;
-  color: #3c84c8;
-  background-color: #ffffff;
-  border: 3px solid #c6dbef;
 }
 
-.ck-table,
-.bss-table,
-.ci-table{
-  font-size: 16px;
-}
-
-#clearSchoolMarker{
-  width: 150px;
-  height:35px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #888ac1;
-  background-color: #ffffff;
-  border: 3px solid #bcbddc;
-}
-
-#searchBikeShare-btn{
-  width: 180px;
-  height:35px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #fb9067;
-  background-color: #ffffff;
-  border: 3px solid #fee4da;
-}
-
-#clearBikeShare-btn{
-  width: 180px;
-  height:35px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #fb9067;
-  background-color: #ffffff;
-  border: 3px solid #fee4da;
-}
-
-.navigation-btn{
-  font-family: 'Montserrat', sans-serif;
-  width: 150px;
-  height:50px;
-  font-weight: bold;
-  font-size: 20px;
-  color: #6496c8;
+#clearSearchResult{
+  width: 110px;
+  margin-left: 20px;
+  /*top: 200px;*/
+  color: black;
   background: rgba(0,0,0,0);
-  border: solid 2px #6496c8;
+  border: solid 1px black;
 }
 
-.navigation-btn:hover {
-  border-color: #c86464;
-  color: #c86464;
-}
 
-#previous-button{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  z-index: 2000;
-}
-
-#next-button{
-  position:fixed;;
-  bottom:20px;
-  left:210px;
-  z-index: 2000;
-}
-
-#legend-first{
-  background-color: #ffffb2;
-}
-
-#legend-second{
-  background-color: #fed976;
-}
-
-#legend-third{
-  background-color: #feb24c;
-}
-
-#legend-fourth{
-  background-color: #fd8d3c;
-}
-
-#legend-fifth{
-  background-color: #fc4e2a;
-}
-
-#sidebar-legend-first{
-  background-color: #b3cde3;
-}
-
-#sidebar-legend-second{
-  background-color: #fbb4ae;
-}
-
-#sidebar-legend-third{
-  background-color: #decbe4;
+#clearSearchResult:hover {
+  border-width: 2px;
+  font-weight: bold;
 }
 
 .leaflet-marker-icon {
-    border:3px solid rgba(255,255,255,0.5);
+    border:2px solid rgba(255,255,255,0.5);
     border-radius:50%;
 }
 
-.Kindergarten {
-    background-color: #b3e2cd;
+.icon-first {
+    background-color: #282345;
 }
 
-.Pre-school {
-    background-color: #fdcdac;
+.icon-second {
+    background-color: #463e79;
 }
 
-.Elementary-School {
-    background-color: #cdb3e2;
+.icon-third {
+    background-color: #5d52a0;
 }
 
-.High-School {
-    background-color: #f4cae4;
+.icon-fourth {
+    background-color: #7e75b8;
 }
 
-.Elem-Mid-High {
-    background-color: #e6f5c9;
-}
-
-.Middle-High {
-    background-color: #fff2ae;
-}
-
-.Tutoring {
-    background-color: #f1e2cc;
-}
-
-.Elem-Middle {
-    background-color: #cccccc;
-}
-
-.bike-icon {
-    background-color: #b3e2cd;
-}
-
-.crime-icon {
-    background-color: #fdcdac;
+.clicked-icon{
+  background-color: #c40000;
 }

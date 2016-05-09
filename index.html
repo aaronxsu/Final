@@ -6,15 +6,41 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:700' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <!-- CSS Imports -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <div class="header"><h1>Existing Conditions in Center City, Philadelphia, PA</h1></div>
+    <!-- Search Boxes  -->
+    <div class="searchboxes">
+      <table>
+        <tr><td style="color:white;">Rank Between:</td>
+            <td><input type="number" id="rank-min"><br></td>
+        </tr>
+        <tr><td style="color:white;">And:</td>
+        <td><input type="number" id="rank-max"></td>
+      </table>
+    </div>
     <!-- Sidebar -->
     <div class="sidebar">
+      <div id="filter">
+        <table>
+          <tr>
+            <td align="left"><input type="checkbox" id="ck-Crime">Crime Density</td>
+          </tr>
+          <tr>
+            <td align="left"><input type="checkbox" id="ck-Sani">Sanitation Complaints Density</td>
+          </tr>
+          <tr>
+            <td align="left"><input type="checkbox" id="ck-Env">Environmental Complaint Density</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <input id="clearSearchResult" type="button" value="Clear Search"></input>
+      </div>
+      <div id="shapes"></div>
     </div>
     <!-- Map -->
     <div id="map" class="map"></div>
@@ -22,8 +48,11 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/2.0.2/turf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
     <script src="js/Chart.js"></script>
     <script src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
     <script src="js/main.js"></script>
+    <script src="js/application.js"></script>
   </body>
 </html>
